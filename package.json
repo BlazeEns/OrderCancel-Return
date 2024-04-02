@@ -1,0 +1,35 @@
+{
+  "name": "ratingreview",
+  "version": "1.0.0",
+  "description": "shopify app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm run build",
+    "server": "nodemon --exec babel-node ./src/index.js",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "localclient": "cd client && npm start",
+    "localserver": "npm run server",
+    "local": "concurrently \"npm run localclient\" \"npm run localserver\"",
+    "start": "npm run dev"
+  },
+  "author": "ens",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.7",
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.23.7",
+    "axios": "^1.6.6",
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.2.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.2"
+  }
+}

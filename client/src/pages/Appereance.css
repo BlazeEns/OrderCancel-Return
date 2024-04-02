@@ -1,0 +1,147 @@
+input[type=color]::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+  }
+  
+  .color_picker:hover {
+    background-color: #f6f6f7;
+    cursor: pointer;
+  }
+  
+  .color_picker {
+    padding: 5px;
+    
+  }
+  
+  .image svg {
+    fill: #FFD700;
+  }
+  
+  .color_container {
+    width: 50%;
+  }
+  .font_size{
+    font-size: 11px;
+  }
+  
+  .input_{
+    width: 7rem;
+  }
+  .input_container{
+    column-gap: 9px;
+  }
+  .burger_menu{
+    display: none;
+  }
+  .control_container{
+    width: -webkit-fill-available;
+  }
+  
+  
+  /* ================ */
+  @media(max-width: 767px) {
+    .image{
+      width: 10%;
+      position: absolute;
+      left: 38%;
+    }
+    #plan-btn{
+      font-size: 10px;
+      background-color: red;
+    }
+    .burger_menu{
+      display:unset !important;
+      position: absolute;
+       position: absolute;
+      top: -10px;
+    }
+    .sidebar_toggle{
+      position: absolute;
+      top: 15%;
+      left: 0;
+      transform: translateX(-100%);
+      transition: all 0.4s ease-in-out;
+    }
+    .collpase{
+      transform: translate(0%);
+    }
+    .resp_container{
+      flex-direction: column-reverse !important;
+    }
+    .manage_sidebar{
+      width: 50% !important;
+      background-color: white !important;
+    }
+    .icon_width{
+      width: 20px;
+    }
+    /* .sidebar_padding{
+      padding-top: 15px !important;
+    } */
+  }
+  
+  @media(min-width: 768px) and (max-width: 1023px) {
+  
+    .input_container {
+      flex-direction: column;
+    }
+  
+    .button_color {
+      flex-direction: column-reverse;
+    }
+  
+    .color_picker {
+      width: 100% !important;
+    }
+  
+    #btn_container {
+      margin-left: 0rem !important;
+    }
+  
+    #font_container {
+      margin-left: 0rem !important;
+    }
+  
+    #btn_text {
+      margin-left: 0rem !important;
+      margin-bottom: 5px;
+  
+    }
+  
+    #btn_border {
+      margin-left: -40px !important;
+    }
+  
+    .star_container {
+      margin-left: -37px !important;
+    }
+    .input_field{
+      width: 100%;
+  
+    }
+    .text_color{
+      margin-bottom: 5px !important;
+    }
+   #color_head{
+    margin-left: 0px !important;
+   }
+   #btn_head{
+    margin-left: 0px !important;
+   }
+   #select_div{
+    margin-Left: 40px;
+    width: 85%;
+   }
+   .star_head{
+    margin-left: 40px;
+   }
+   #star_select{
+    margin-Left: 40px;
+    width: 85%;
+   }
+   #border_select{
+    margin-Left: 40px;
+    width: 85%;
+   }
+  }

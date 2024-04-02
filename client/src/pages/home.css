@@ -1,0 +1,27 @@
+.btnSubmit{
+  background-color: #000;
+  color: #fff;
+  padding: 1%;
+  border: none;
+  cursor: pointer;
+}
+.btnSubmit:hover{
+  background-color: #000;
+  color: #fff;
+}
+.login{
+  margin : auto;
+  width: 50%;
+  transform: translate(0%, 50%);
+  background-color: #f3f3f3;
+  border-radius:30px ;
+}
+.containerBox{
+  padding: 7% 5%;
+}
+.form-group {
+  margin-bottom: 3%;
+}
+.form-group input{
+  height: 1.5rem;
+}
